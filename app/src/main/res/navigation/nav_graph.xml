@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/routineListFragment">
+
+    <fragment
+        android:id="@+id/routineListFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.ui.main.RoutineListFragment"
+        android:label="Routines">
+
+        <action
+            android:id="@+id/action_routineListFragment_to_addEditRoutineFragment"
+            app:destination="@id/addEditRoutineFragment" />
+
+        <action
+            android:id="@+id/action_routineListFragment_to_routineDetailsFragment"
+            app:destination="@id/routineDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/routineDetailsFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.ui.main.RoutineDetailsFragment"
+        android:label="Routine details">
+        <action
+            android:id="@+id/action_routineDetailsFragment_to_addEditRoutineFragment"
+            app:destination="@id/addEditRoutineFragment" />
+
+        <action
+            android:id="@+id/action_routineDetailsFragment_to_routineListFragment"
+            app:destination="@id/routineListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditRoutineFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.ui.main.AddEditRoutineFragment"
+        android:label="Add/Edit routine">
+        <action
+            android:id="@+id/action_addEditRoutineFragment_to_routineListFragment"
+            app:destination="@id/routineListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.ui.main.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>

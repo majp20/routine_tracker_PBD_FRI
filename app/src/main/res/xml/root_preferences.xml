@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+    <PreferenceCategory
+        app:title="@string/settings_title"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="global_notifications_enabled"
+            app:title="@string/notifications_enable"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            app:key="notification_advance_time"
+            app:title="@string/notifications_time_title"
+            app:defaultValue="10"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            app:key="current_location"
+            app:title="Set current location:"
+            app:defaultValue="Ljubljana, Slovenia"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false">
+
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="reset_app"
+            app:title="@string/reset_app_title"
+            app:summary="@string/reset_app_summary"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

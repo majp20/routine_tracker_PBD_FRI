@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/sharp_settings_24"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/routineListFragment"
+        android:icon="@drawable/outline_family_home_24"
+        android:title="@string/home"/>
+
+</menu>

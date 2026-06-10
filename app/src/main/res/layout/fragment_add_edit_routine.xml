@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.AddEditRoutineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add/Edit name:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:hint="Edit/enter routine name"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose routine type:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose routine start time:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edit_start_time"
+            android:layout_width="match_parent"
+            android:hint="Enter routine start time"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose routine end time:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edit_end_time"
+            android:hint="Enter routine end time"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick active days for routine:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/monday"
+            android:text = "Monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/tuesday"
+            android:layout_width="match_parent"
+            android:text = "Tuseday"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/wednesday"
+            android:layout_width="match_parent"
+            android:text = "Wednesday"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/thursday"
+            android:layout_width="match_parent"
+            android:text = "Thursday"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/friday"
+            android:layout_width="match_parent"
+            android:text = "Friday"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/saturday"
+            android:layout_width="match_parent"
+            android:text = "Saturday"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/sunday"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Sunday"></CheckBox>
+
+        <Switch
+            android:id="@+id/notfications_switch"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Enable notifications"
+            android:textStyle="bold">
+        </Switch>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:id = "@+id/save_button"
+            android:text = "Save changes">
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>
